@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С 8 Марта, девочки!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1a1a1a;
+            color: #fff;
+            overflow-x: hidden;
+            text-align: center;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .section h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #ff6f61;
+        }
+        .section p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #ddd;
+        }
+        .section img {
+            width: 150px;
+            margin: 20px 0;
+        }
+        .scroll-down {
+            font-size: 1.2em;
+            margin-top: 20px;
+            animation: bounce 2s infinite;
+            color: #ff6f61;
+            cursor: pointer;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-bottom: 50px;
+            font-size: 1em;
+            color: rgba(221, 221, 221, 0.7);
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Первая секция -->
+    <div class="section">
+        <h1>С 8 Марта, девочки!</h1>
+        <p>Поздравляем вас с праздником весны! 🌸</p>
+        <img src="/image/image.jpeg" alt="Букет цветов">
+        <div class="scroll-down">Остальное внизу ↓</div>
+    </div>
+
+    <!-- Вторая секция -->
+    <div class="section">
+        <h1>Вы — самые яркие!</h1>
+        <p>Спасибо за вашу энергию, улыбки и доброту. 💖</p>
+        <img src="/image/image.jpeg" alt="Букет цветов">
+    </div>
+
+    <!-- Третья секция -->
+    <div class="section">
+        <h1>Будьте счастливы!</h1>
+        <p>Пусть каждый ваш день будет наполнен радостью и теплом. 🌟</p>
+        <div class="footer">От 5-го Б класса!</div>
+    </div>
+
+    <!-- Локальная музыка -->
+    <audio autoplay loop>
+        <source src="music/lofi.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+
+    <!-- Скрипт для прокрутки вниз -->
+    <script>
+        const scrollDown = document.querySelector(".scroll-down");
+        scrollDown.addEventListener("click", () => {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</body>
+</html>
